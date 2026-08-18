@@ -23,7 +23,7 @@ resource "aws_dynamodb_table" "broken" {
   hash_key = "customerId"
 
   attribute {
-    name = "customer_ID"
+    name = "customer_ID1"
     type = "S"
   }
 }
