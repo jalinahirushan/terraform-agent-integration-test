@@ -26,7 +26,7 @@ jobs:
       TERRAFORM_DIR: infrastructure
       AWS_REGION: ${{ vars.AWS_REGION }}
       TF_VAR_aws_region: ${{ vars.AWS_REGION }}
-      FAILURE_LOG: ${{ runner.temp }}/terraform-failure.log
+      FAILURE_LOG: ${{ github.workspace }}/terraform-failure.log
 
     steps:
       - name: Check out exact tested commit
